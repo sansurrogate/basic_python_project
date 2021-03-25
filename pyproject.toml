@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "basic_python_project"
+version = "0.1.0"
+description = ""
+authors = ["sansurrogate <takaaki.sanjoh@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+plotly = "^4.14.3"
+jupyterlab = "^3.0.12"
+ipywidgets = "^7.6.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
