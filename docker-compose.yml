@@ -1,8 +1,12 @@
 version: '3.4'
 
 services:
-  basicpythonproject:
-    image: basicpythonproject
+  basic_python_project:
+    image: basic_python_project
     build:
       context: .
       dockerfile: ./Dockerfile
+    volumes:
+      - .:/home/user/project:cached
+    ports:
+      - "8888:8888"
